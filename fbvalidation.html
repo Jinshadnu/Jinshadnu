@@ -1,0 +1,77 @@
+<html>
+<title>Facebook
+</title>
+<script>
+function form_validation(){
+var name=document.getElementById("n").value;
+var pass1=document.getElementById("password").value;
+
+
+
+
+if(name.length<3){
+alert("Name cant'be null and firstname contain atleast 3 characters");
+}
+else if(pass1.length<6){
+alert("Password must be at least 6 characters long.");
+}
+var currentTime = new Date();
+var dd = currentTime.getFullYear();
+
+var d1=new Date(document.getElementById("date1").value).getFullYear();
+var age1=dd-d1;
+if(age1<13)
+{
+alert("You are not eligible");
+}
+}
+</script>
+<body bgcolor=	"#dfe3ee">
+
+<div>
+<table align="left" bgcolor="#3b5998" width="100%" cellpadding="15px" >
+<tr>
+<th><h1 align="left"><font color="white" size="7"> facebook. </font></h1></th>
+<td align="right">
+<form align="right">
+<input type=text name=user value="" placeholder="Email or Phone">
+<input type=text name=pass value="" placeholder="Password">
+<input type=button value="Log In" style="font-size:8pt;color:white; background-color:blue;" >
+</form>
+<td>
+</table>
+</div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div>
+<div style="float:left">
+ <tabl>
+ &nbsp&nbsp&nbsp<th><h2><font size="6">&nbsp&nbsp&nbsp&nbsp Facebook helps you connect and share with the <br> &nbsp&nbsp&nbsp&nbsp people in your life.</font></h2></th>
+ <img src="C:\Users\user\Desktop\Products\pyNVUg5EM0j.png" height="500" width="700"></img><br>
+ </table>
+</div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ <div style="float:Right" "position:fixed">
+ <table style="margin-top:5px;">
+ <th><h3><font size="6">Sign Up</font></h3>
+ 
+ <form name="myform" align="left">
+ <input type="text" name="name" id="n" placeholder="First Name">&nbsp&nbsp<input type="text" name=user value="" placeholder="Last Name" ></tr><br><br>
+ <tr><td><input type="text" name="pass" value="" placeholder="Mobile Number" size="45">&nbsp&nbsp&nbsp&nbsp</td></tr>
+ <tr><td><input type="text" name="Email" value="" id="Email1" placeholder="Email" size="45"></td></tr><br>
+ <tr><td><input type="text" name="Phone" value="" id="password" placeholder="Password" size="45"></td></tr>
+ <tr><td><input type="date" name="date1" value="" id="date1" placeholder="Date of Birth" size="45"></td></tr>
+ <tr><td><p><font size="2">By clicking Create Account, you agree to our Terms and confirm</font></p></td></tr> 
+ <tr><td><p1><font size="2">that you have read our Data Policy, including our Cookie Use</font></p1></td></tr>
+ <tr><td><p2><font size="2"> Policy. You may receive SMS message notifications from</font></p2></td></tr>
+ <tr><td><p3><font size="2">Facebook and can opt out at any time.</font></p3></td></tr>
+ <tr><td><input type=button value="Sign Up Now" onclick="form_validation()"style="font-size:10pt;color:white;background-color:green;" ></tr></td>
+ 
+ </form>
+
+
+</div>
+ </table>
+
+</div>
+</body>
+</html>
