@@ -1,0 +1,73 @@
+<html>
+<title>Facebook
+</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script type="text/javascript">
+$(document).ready(function(){
+$("#btnlogin").click(function(){
+var username=$("#user").val();
+var lastname=$("#last").val();
+if(username.length<3){
+alert("firstname must be contain atleast 3 character");
+}
+else if(lastname.length<3){
+alert("lastname must be contain atleast 3 character");
+}
+var today=new Date();
+var dd=today.getFullYear();
+
+var dob=$("#date1").val();
+
+var d2=new Date(dob).getFullYear();
+
+var age1=dd-d2;
+if(age1<13)
+{
+alert("You are not eligible");
+}
+
+});
+});
+</script>
+<body bgcolor=	"#dfe3ee">
+
+<div>
+<table align="left" bgcolor="#3b5998" width="100%" cellpadding="15px" >
+<tr>
+<th><h1 align="left"><font color="white" size="7"> facebook. </font></h1></th>
+<td align="right">
+<form align="right">
+<input type=text name=user value="" placeholder="Email or Phone">
+<input type=text name=pass value="" placeholder="Password">
+<input type=button value="Log In" style="font-size:8pt;color:white; background-color:blue;" >
+</form>
+<td>
+</table>
+</div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div>
+<div style="float:left">
+ <tabl>
+ &nbsp&nbsp&nbsp<th><h2><font size="6">&nbsp&nbsp&nbsp&nbsp Facebook helps you connect and share with the <br> &nbsp&nbsp&nbsp&nbsp people in your life.</font></h2></th>
+ <img src="C:\Users\user\Desktop\Products\pyNVUg5EM0j.png" height="500" width="700"></img><br>
+ </table>
+</div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ <div style="float:Right" "position:fixed">
+ <table style="margin-top:5px;">
+ <th><h3><font size="6">Sign Up</font></h3>
+ 
+ <form align="left">
+ <input type="text" name="firstname" id="user" placeholder="First Name">&nbsp&nbsp<input type="text" name=user id="last" size="18" value="" placeholder="Last Name" ></tr><br><br>
+ <tr><td><input type="text" name="pass" value="" placeholder="Mobile Number" size="45" style="font-size: 11pt; height: 40px; width:338px;  " >&nbsp&nbsp&nbsp&nbsp</td></tr>
+ <tr><td><input type="text" name="Email" value="" id="Email1" placeholder="Email" style="font-size: 11pt; height: 40px; width:338px; "></td></tr><br>
+ <tr><td><input type="password" name="Phone" value="" id="password" placeholder="Password" SIZE="43"></td></tr>
+ <tr><td><input type="date" name="date1" value="" id="date1" placeholder="Date of Birth"  id="date1" style="font-size: 11pt; height: 40px; width:338px;"></td></tr>
+ <tr><td><input type=button value="Sign Up Now" id="btnlogin" style="font-size:10pt;color:white;background-color:green;"></tr></td>
+ </form>
+</div>
+ </table>
+
+</div>
+</body>
+</html>
